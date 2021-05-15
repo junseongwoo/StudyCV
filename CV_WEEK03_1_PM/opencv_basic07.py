@@ -1,6 +1,7 @@
 import cv2
 
 img = cv2.imread("images/paper.jpg")
+img2 = cv2.imread("images/color.jpg")
 
 print(img.shape)
 print(img.shape[0])
@@ -11,10 +12,10 @@ print(img.size)
 print(img.dtype)
 
 b, g, r = cv2.split(img)
+b2, g2, r2 = cv2.split(img2)
 print(b)
 
-
-img = cv2.merge((b,g,r))
+img = cv2.merge((b2,g2,b2))
 
 cv2.imshow("imshow", img)
 cv2.waitKey(0)
