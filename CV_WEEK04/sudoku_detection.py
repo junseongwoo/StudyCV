@@ -16,6 +16,7 @@ lines = cv2.HoughLines(edges, 1, np.pi/180, 200)
 # 그래서 다시 x, y 좌표로 만들어줘야함
 
 ## Todo - 공식 다시 이해 하기
+## 
 for line in lines:
     rho, theta = line[0]
     a = np.cos(theta)
