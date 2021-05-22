@@ -46,11 +46,5 @@ cv2.imshow("morp GRAD", img_grad)
 cv2.imshow("morp TOPHAT", img_tophat)
 cv2.imshow("morp BLACKHAT", img_blackhat)
 
-
-
-
-
-
-
 cv2.waitKey(0)
 cv2.destroyAllWindows()
