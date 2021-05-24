@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 img = cv2.imread("sudoku.jpg")
-
+ 
 img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # apertureSize : 커널 크기 , 기본 크기는 3 
 edges = cv2.Canny(img_gray, 50, 150) #, apertureSize=3)

@@ -3,7 +3,7 @@ import numpy as np
 
 img = cv2.imread("circle.jpg")
 output = img.copy()
-
+ 
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 gray = cv2.medianBlur(gray, 7)
 

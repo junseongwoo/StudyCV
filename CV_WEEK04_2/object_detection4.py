@@ -12,7 +12,7 @@ while cap.isOpened():
     frame = cv2.resize(frame, None, fx=0.5, fy=0.5, interpolation=cv2.INTER_LINEAR)
     
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-
+   
     human = human_calssifier.detectMultiScale(gray, 1.4, 2)
 
     for (x,y,w,h) in human:
