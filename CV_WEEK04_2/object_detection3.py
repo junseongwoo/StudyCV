@@ -9,10 +9,10 @@ cap = cv2.VideoCapture("cars.avi")
 while cap.isOpened():
     time.sleep(0.05)
     ret, frame = cap.read()
-
+ 
     # todo ret이 무엇인지 확인하기 
-    if ret == True :
-        
+    if ret == True : 
+         
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
         cars = car_calssifier.detectMultiScale(gray, 1.4, 2)

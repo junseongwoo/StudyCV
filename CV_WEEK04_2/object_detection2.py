@@ -6,7 +6,7 @@ def orb_detector(new_image, image_template):
     image2 = image_template
 
     orb = cv2.ORB_create(1000, 1.2)
- 
+  
     keypoints_1, descriptors_1 = orb.detectAndCompute(image1, None)
     keypoints_2, descriptors_2 = orb.detectAndCompute(image2, None)
 

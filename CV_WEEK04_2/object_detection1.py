@@ -49,7 +49,7 @@ while True:
     matches = sift_detector(cropped, image_template)
 
     cv2.putText(frame, str(matches), (450, 450), cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 255, 0), 1)
-
+ 
     threshold = 10
 
     if matches > threshold:
