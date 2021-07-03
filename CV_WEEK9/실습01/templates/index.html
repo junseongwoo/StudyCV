@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Computer Vision 서비스 앱</title>
+    </head>
+    <body>
+        <h1>환영합니다! {{ name }}님!</h1>
+        <p>이곳은 Computer Vision 서비스를 제공합니다.</p>
+        <p>현재 서비스에 대한 만족도는 {{ marks }}입니다!</p>
+
+        {% if marks < 50 %}
+            <p>죄송합니다! 노력해서 좋은 서비스를 만들겠습니다.</p>
+        {% else %}
+            <p>감사합니다! 앞으로 더 노력하겠습니다.</p>
+        {% endif %}
+    </body>
+</html>

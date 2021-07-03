@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>for loop</title>
+    </head>
+
+    <body>
+        <h1>For Loop 실습</h1>
+        <table border="1px" align="center">
+            <tr>
+                <th>과목</th>
+                <th>점수</th>
+                <th>통과여부</th>
+            </tr>
+
+            {% for sub, marks in data.items() %}
+            <tr>
+                <td>{{ sub }}</td>
+                <td>{{ marks }}</td>
+                <td align="center">
+                    {% if marks >= 50 %}
+                        <span style="color:green">P</span>
+                    {% else %}
+                        <span style="color:red">F</span>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

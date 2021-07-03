@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Upload 테스트</title>
+    </head>
+
+    <body>
+        이것은 실습 04 upload 예제입니다.
+
+        <form action="" method="POST" enctype="multipart/form-data">
+            <input type="file" name="upload">
+            <input type="submit" value="업로드">
+        </form>
+
+        {% if upload %}
+            {{ fname }}이 잘 업로드되었습니다!
+        {% endif %}
+
+    </body>
+</html>
